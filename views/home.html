@@ -1,322 +1,129 @@
 <!doctype html>
-        <!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en-US"> <![endif]-->
-        <!--[if IE 7]>    <html class="lt-ie9 lt-ie8" lang="en-US"> <![endif]-->
-        <!--[if IE 8]>    <html class="lt-ie9" lang="en-US"> <![endif]-->
-        <!--[if gt IE 8]><!--> <html lang="en-US"> <!--<![endif]-->
-        <head>
-                <!-- META TAGS -->
-                <meta charset="UTF-8" />
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--[if lt IE 7]>
+<html class="lt-ie9 lt-ie8 lt-ie7" lang="en-US"> <![endif]-->
+<!--[if IE 7]>
+<html class="lt-ie9 lt-ie8" lang="en-US"> <![endif]-->
+<!--[if IE 8]>
+<html class="lt-ie9" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en-US"> <!--<![endif]-->
+<head>
+    <% include ../views/templates/head.html %>
+</head>
+<body>
 
-                <title>辣妈论坛</title>
+<!-- Start of Header -->
+<% include ../views/templates/header-wrapper.html %>
+<!-- End of Header -->
 
-                <link rel="shortcut icon" href="images/favicon.png" />
+<!-- Start of Search Wrapper -->
+<% include ../views/templates/search-area-wrapper.html %>
+<!-- End of Search Wrapper -->
+
+<!-- Start of Page Container -->
+<div class="page-container">
+    <div class="container">
+        <div class="row">
+
+            <!-- start of page content -->
+            <div class="span8 page-content">
+
+                <!-- Basic Home Page Template -->
+                <div class="row separator">
+                    <section class="span4 articles-list">
+                        <h3>精华帖子</h3>
+                        <ul class="articles">
+                            <li class="article-entry standard">
+                                <h4><a href="single.html">【辣妈帮★日报】如何用普通食材做出高逼格大餐，菜鸟都能学会！</a></h4>
+                                <span class="article-meta">2016,05,25 <a href="#"
+                                                                         title="View all posts in Server &amp; Database">辣妈帮</a></span>
+                                <span class="like-count">66</span>
+                            </li>
+                            <li class="article-entry standard">
+                                <h4><a href="single.html">【经验分享】宝宝出生第一年妈妈最应关心的问题</a></h4>
+                                <span class="article-meta">2016,05,24 <a href="#" title="View all posts in Website Dev">育儿知识</a></span>
+                                <span class="like-count">15</span>
+                            </li>
+                            <li class="article-entry video">
+                                <h4><a href="single.html">缸吃过晚饭，闲来无事大家都来聊聊自家做菜都是用什么油，到底什么油最健康</a></h4>
+                                <span class="article-meta">2016,05,23 <a href="#" title="View all posts in Website Dev">辣妈帮</a></span>
+                                <span class="like-count">8</span>
+                            </li>
+                            <li class="article-entry image">
+                                <h4><a href="single.html">【远方，你好】24小时长途跋涉，不眠不休，只为团聚时的那一个拥抱</a></h4>
+                                <span class="article-meta">2016,03,22<a href="#"
+                                                                        title="View all posts in Advanced Techniques">辣妈帮</a></span>
+                                <span class="like-count">6</span>
+                            </li>
+                            <li class="article-entry standard">
+                                <h4><a href="single.html">BB轻松度过转奶期，全靠它了！</a></h4>
+                                <span class="article-meta">2016,05,21 <a href="#" title="View all posts in Website Dev">育儿知识</a></span>
+                                <span class="like-count">2</span>
+                            </li>
+                            <li class="article-entry standard">
+                                <h4><a href="single.html">大家来说说，我是不是对婆婆太低三下四了，所以婆婆这样对我 ？</a></h4>
+                                <span class="article-meta">2016,05,19 <a href="#" title="View all posts in Website Dev">辣妈帮</a></span>
+                                <span class="like-count">3</span>
+                            </li>
+                        </ul>
+                    </section>
 
 
-                
-
-                <!-- Style Sheet-->
-                <link rel='stylesheet' id='bootstrap-css-css'  href='css/bootstrap5152.css' />
-                <link rel='stylesheet' id='responsive-css-css'  href='css/responsive5152.css' />
-                <link rel='stylesheet' id='pretty-photo-css-css'  href='js/prettyphoto/prettyPhotoaeb9.css' />
-                <link rel='stylesheet' id='main-css-css'  href='css/main5152.css' />
-                <link rel='stylesheet' id='custom-css-css'  href='css/custom5152.html' />
-                <link href="css/style.css" rel="stylesheet" type="text/css">
-
-
-                <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-                <!--[if lt IE 9]>
-                <script src="js/html5.js"></script></script>
-                <![endif]-->
-
-        </head>
-
-        <body>
-
-                <!-- Start of Header -->
-                <div class="header-wrapper">
-                        <header>
-                                <div class="container">
-
-
-                                        <div class="logo-container">
-                                                <!-- Website Logo -->
-                                                <a href="home.html"  title="Knowledge Base Theme">
-                                                        <img src="images/logo.png" alt="Knowledge Base Theme">
-                                                </a>
-                                                <span class="tag-line">http://lama.com.cn</span>
-                                        </div>
-
-
-                                        <!-- Start of Main Navigation -->
-                                        <nav class="main-nav">
-                                                <div class="menu-top-menu-container">
-                                                        <ul id="menu-top-menu" class="clearfix">
-                                                                <li class="current-menu-item"><a href="home.html">辣妈帮</a></li>
-                                                          <li><a href="home-categories-description.html">育儿知识</a></li>
-                                                          <li><a href="home-categories-articles.html">母婴用品</a></li>
-                                                          <li><a href="elements.html">亲子活动</a></li>
-                                                          <li><a href="articles-list.html">个人中心</a></li>
-                                                    <li><a href="faq.html">常见问题</a></li>
-                                                               
-                                                                <li><a href="#">登录/注册</a>
-                                                                  <ul class="sub-menu">
-                                                                                <li><a href="denglu.html">登录</a></li>
-                                                                                <li><a href="zhuce.html">注册</a></li>
-                                                                          
-                                                                        </ul>
-                                                                </li>
-                                                                <li><a href="contact.html">联系我们</a></li>
-                                                        </ul>
-                                                </div>
-                                        </nav>
-                                        <!-- End of Main Navigation -->
-
-                                </div>
-                        </header>
+                    <section class="span4 articles-list">
+                        <h3>最新的帖子</h3>
+                        <ul class="articles">
+                            <li class="article-entry standard">
+                                <h4><a href="single.html">【宝宝怎样才能长高】宝宝长高7大秘籍，一项都不能漏~</a></h4>
+                                <span class="article-meta">2016,07,08 <a href="#"
+                                                                         title="View all posts in Server &amp; Database">育儿知识</a></span>
+                                <span class="like-count">66</span>
+                            </li>
+                            <li class="article-entry standard">
+                                <h4><a href="single.html">【月子病】新妈妈要小心预防6种月子病，月子病的治疗方法</a></h4>
+                                <span class="article-meta">2016,07,07 <a href="#"
+                                                                         title="View all posts in Advanced Techniques">辣妈帮</a></span>
+                                <span class="like-count">18</span>
+                            </li>
+                            <li class="article-entry image">
+                                <h4><a href="single.html">【婴儿果汁】几种常见的果汁制作方法及果汁喂养注意事项~</a></h4>
+                                <span class="article-meta">2016,07,06 <a href="#"
+                                                                         title="View all posts in Designing in WordPress">育儿知识</a></span>
+                                <span class="like-count">7</span>
+                            </li>
+                            <li class="article-entry video">
+                                <h4><a href="single.html">【宝宝爱米粉】米粉喂养全攻略，献给将要或者正在给宝宝喂米粉的麻麻们~</a></h4>
+                                <span class="article-meta">2016,07,05 <a href="#"
+                                                                         title="View all posts in WordPress Plugins">育儿知识</a></span>
+                                <span class="like-count">7</span>
+                            </li>
+                            <li class="article-entry standard">
+                                <h4><a href="single.html">【如厕训练】什么时候要开始训练宝宝大小便，如何训练宝宝摆脱尿布，独立大小便？</a></h4>
+                                <span class="article-meta">2016,07,04 <a href="#" title="View all posts in Website Dev">育儿知识</a></span>
+                                <span class="like-count">15</span>
+                            </li>
+                            <li class="article-entry standard">
+                                <h4><a href="single.html">【满月发汗】月子里如何发汗？</a></h4>
+                                <span class="article-meta">2016,07,03 <a href="#"
+                                                                         title="View all posts in Theme Development">辣妈帮</a></span>
+                                <span class="like-count">1</span>
+                            </li>
+                        </ul>
+                    </section>
                 </div>
-                <!-- End of Header -->
+            </div>
+            <!-- end of page content -->
 
-                <!-- Start of Search Wrapper -->
-                <div class="search-area-wrapper">
-                        <div class="search-area container">
-                                <h3 class="search-header">欢迎你加入辣妈论坛！</h3>
-                                <p class="search-tag-line">在这里你可以和其他辣妈们交流育儿经哦！请积极参与我们的讨论中哦~</p>
+            <% include ../views/templates/sidebar.html %>
 
-                                <form id="search-form" class="search-form clearfix" method="get" action="#" autocomplete="off">
-                                        <input class="search-term required" type="text" id="s" name="s" placeholder="Type your search terms here" title="* Please enter a search term!" />
-                                        <input class="search-btn" type="submit" value="搜索" />
-                                        <div id="search-error-container"></div>
-                                </form>
-                        </div>
-                </div>
-                <!-- End of Search Wrapper -->
+        </div>
+    </div>
+</div>
+<!-- End of Page Container -->
 
-                <!-- Start of Page Container -->
-                <div class="page-container">
-                        <div class="container">
-                                <div class="row">
-
-                                        <!-- start of page content -->
-                                        <div class="span8 page-content">
-
-                                                <!-- Basic Home Page Template -->
-                                                <div class="row separator">
-                                                        <section class="span4 articles-list">
-                                                                <h3>精华帖子</h3>
-                                                                <ul class="articles">
-                                                                        <li class="article-entry standard">
-                                                                                <h4><a href="single.html">【辣妈帮★日报】如何用普通食材做出高逼格大餐，菜鸟都能学会！</a></h4>
-                                                                                <span class="article-meta">2016,05,25 <a href="#" title="View all posts in Server &amp; Database">辣妈帮</a></span>
-                                                                                <span class="like-count">66</span>
-                                                                        </li>
-                                                                        <li class="article-entry standard">
-                                                                                <h4><a href="single.html">【经验分享】宝宝出生第一年妈妈最应关心的问题</a></h4>
-                                                                                <span class="article-meta">2016,05,24 <a href="#" title="View all posts in Website Dev">育儿知识</a></span>
-                                                                                <span class="like-count">15</span>
-                                                                        </li>
-                                                                        <li class="article-entry video">
-                                                                                <h4><a href="single.html">缸吃过晚饭，闲来无事大家都来聊聊自家做菜都是用什么油，到底什么油最健康</a></h4>
-                                                                                <span class="article-meta">2016,05,23 <a href="#" title="View all posts in Website Dev">辣妈帮</a></span>
-                                                                                <span class="like-count">8</span>
-                                                                        </li>
-                                                                        <li class="article-entry image">
-                                                                                <h4><a href="single.html">【远方，你好】24小时长途跋涉，不眠不休，只为团聚时的那一个拥抱</a></h4>
-                                                                                <span class="article-meta">2016,03,22<a href="#" title="View all posts in Advanced Techniques">辣妈帮</a></span>
-                                                                                <span class="like-count">6</span>
-                                                                        </li>
-                                                                        <li class="article-entry standard">
-                                                                                <h4><a href="single.html">BB轻松度过转奶期，全靠它了！</a></h4>
-                                                                                <span class="article-meta">2016,05,21 <a href="#" title="View all posts in Website Dev">育儿知识</a></span>
-                                                                                <span class="like-count">2</span>
-                                                                        </li>
-                                                                        <li class="article-entry standard">
-                                                                                <h4><a href="single.html">大家来说说，我是不是对婆婆太低三下四了，所以婆婆这样对我 ？</a></h4>
-                                                                                <span class="article-meta">2016,05,19 <a href="#" title="View all posts in Website Dev">辣妈帮</a></span>
-                                                                                <span class="like-count">3</span>
-                                                                        </li>
-                                                                </ul>
-                                                        </section>
+<% include ../views/templates/footer.html %>
 
 
-                                                        <section class="span4 articles-list">
-                                                                <h3>最新的帖子</h3>
-                                                                <ul class="articles">
-                                                                        <li class="article-entry standard">
-                                                                                <h4><a href="single.html">【宝宝怎样才能长高】宝宝长高7大秘籍，一项都不能漏~</a></h4>
-                                                                                <span class="article-meta">2016,07,08 <a href="#" title="View all posts in Server &amp; Database">育儿知识</a></span>
-                                                                                <span class="like-count">66</span>
-                                                                        </li>
-                                                                        <li class="article-entry standard">
-                                                                                <h4><a href="single.html">【月子病】新妈妈要小心预防6种月子病，月子病的治疗方法</a></h4>
-                                                                                <span class="article-meta">2016,07,07 <a href="#" title="View all posts in Advanced Techniques">辣妈帮</a></span>
-                                                                                <span class="like-count">18</span>
-                                                                        </li>
-                                                                        <li class="article-entry image">
-                                                                                <h4><a href="single.html">【婴儿果汁】几种常见的果汁制作方法及果汁喂养注意事项~</a></h4>
-                                                                                <span class="article-meta">2016,07,06 <a href="#" title="View all posts in Designing in WordPress">育儿知识</a></span>
-                                                                                <span class="like-count">7</span>
-                                                                        </li>
-                                                                        <li class="article-entry video">
-                                                                                <h4><a href="single.html">【宝宝爱米粉】米粉喂养全攻略，献给将要或者正在给宝宝喂米粉的麻麻们~</a></h4>
-                                                                                <span class="article-meta">2016,07,05 <a href="#" title="View all posts in WordPress Plugins">育儿知识</a></span>
-                                                                                <span class="like-count">7</span>
-                                                                        </li>
-                                                                        <li class="article-entry standard">
-                                                                                <h4><a href="single.html">【如厕训练】什么时候要开始训练宝宝大小便，如何训练宝宝摆脱尿布，独立大小便？</a></h4>
-                                                                                <span class="article-meta">2016,07,04 <a href="#" title="View all posts in Website Dev">育儿知识</a></span>
-                                                                                <span class="like-count">15</span>
-                                                                        </li>
-                                                                        <li class="article-entry standard">
-                                                                                <h4><a href="single.html">【满月发汗】月子里如何发汗？</a></h4>
-                                                                                <span class="article-meta">2016,07,03 <a href="#" title="View all posts in Theme Development">辣妈帮</a></span>
-                                                                                <span class="like-count">1</span>
-                                                                        </li>
-                                                                </ul>
-                                                        </section>
-                                                </div>
-                                        </div>
-                                        <!-- end of page content -->
+<% include ../views/templates/scripts.html %>
 
-
-                                        <!-- start of sidebar -->
-                                        <aside class="span4 page-sidebar">
-
-                                                <section class="widget">
-                                                        <div class="support-widget">
-                                                                <h3 class="title">帮助中心</h3>
-                                                                <p class="intro">您需要更多的帮助吗？请联系我们帮您解决更多的问题哦！</p>
-                                                        </div>
-                                                </section>
-
-                                                <section class="widget">
-                                                        <div class="quick-links-widget">
-                                                                <h3 class="title">快捷链接</h3>
-                                                                <ul id="menu-quick-links" class="menu clearfix">
-                                                                        <li><a href="home.html">首页</a></li>
-                                                                        <li><a href="articles-list.html">个人中心</a></li>
-                                                                        <li><a href="faq.html">常见问题</a></li>
-                                                                        <li><a href="contact.html">联系我们</a></li>
-                                                                </ul>
-                                                        </div>
-                                                </section>
-
-                                                <section class="widget">
-                                                        <h3 class="title">标签</h3>
-                                                        <div class="tagcloud">
-                                                                <a href="#" class="btn btn-mini">辣妈</a>
-                                                                <a href="#" class="btn btn-mini">宝宝</a>
-                                                                <a href="#" class="btn btn-mini">萌照</a>
-                                                                <a href="#" class="btn btn-mini">旅游</a>
-                                                                <a href="#" class="btn btn-mini">美食</a>
-                                                                <a href="#" class="btn btn-mini">感冒</a>
-                                                                <a href="#" class="btn btn-mini">营养</a>
-                                                                <a href="#" class="btn btn-mini">健康</a>
-                                                                <a href="#" class="btn btn-mini">经验</a>
-                                                                <a href="#" class="btn btn-mini">交流</a>
-                                                                <a href="#" class="btn btn-mini">晒图</a>
-                                                                <a href="#" class="btn btn-mini">淘气</a>
-                                                                <a href="#" class="btn btn-mini">萌语</a>
-                                                                <a href="#" class="btn btn-mini">晒吃</a>
-                                                                <a href="#" class="btn btn-mini">交通</a>
-                                                                <a href="#" class="btn btn-mini">安全</a>
-                                                                <a href="#" class="btn btn-mini">保护</a>
-                                                                <a href="#" class="btn btn-mini">呵护</a>
-                                                                <a href="#" class="btn btn-mini">成长</a>
-                                                        </div>
-                                                </section>
-
-                                        </aside>
-                                        <!-- end of sidebar -->
-                                </div>
-                        </div>
-                </div>
-                <!-- End of Page Container -->
-
-                <!-- Start of Footer -->
-                <footer id="footer-wrapper">
-                        <div id="footer" class="container">
-                                <div class="row">
-
-                                        <div class="span3">
-                                                <section class="widget">
-                                                        <h3 class="title">关于辣妈帮</h3>
-                                                        <div class="textwidget">
-                                                                <p>辣妈帮是中国领先的移动母婴生活分享平台，提供众多场景式的经验，让妈妈们通过交流、匹配、筛选，找到可以解决自身问题的答案，同时在平台中与活跃的达人妈妈们相互交流、分享经验、学习育儿，建立适合自己的新母婴生活方式。</p>
-                                                               </div>
-                                                </section>
-                                        </div>
-
-                                        <div class="span3">
-                                                <section class="widget"><h3 class="title">站内导航</h3>
-                                                        <ul>
-                                                                <li><a href="#" title="Lorem ipsum dolor sit amet,">辣妈帮</a> </li>
-                                                                <li><a href="#" title="Lorem ipsum dolor sit amet,">育儿知识</a></li>
-                                                                <li><a href="#" title="Lorem ipsum dolor sit amet,">晒宝宝</a></li>
-                                                                <li><a href="#" title="Lorem ipsum dolor sit amet, ">个人中心</a></li>
-                                                                <li><a href="#" title="Lorem ipsum dolor sit amet,">常见问题</a></li>
-                                                                <li><a href="#" title="Lorem ipsum dolor sit amet,">更多</a></li>
-                                                                <li><a href="#" title="Lorem ipsum dolor sit amet, ">联系我们</a></li>
-                                                        </ul>
-                                                </section>
-                                        </div>
-
-                                        <div class="span3">
-                                                <section class="widget">
-                                                        <h3 class="title">最新消息</h3>
-                                                        <div id="twitter_update_list">
-                                                                <ul>
-                                                                        <li>暂时没有最新消息！</li>
-                                                                </ul>
-                                                        </div>
-                                                       
-                                                </section>
-                                        </div>
-
-                                        <div class="span3">
-                                                <section class="widget">
-                                                        <h3 class="title">本周最萌宝贝照</h3>
-                                                        <div class="flickr-photos" id="basicuse">
-                                                        <img src="images/lama_img1.jpg" width="270" height="282">
-                                                        </div>
-                                                </section>
-                                        </div>
-
-                                </div>
-                        </div>
-                        <!-- end of #footer -->
-
-                        <!-- Footer Bottom -->
-                        <div id="footer-bottom-wrapper">
-                                <div id="footer-bottom" class="container">
-                                        <div class="row">
-                                                <div class="span6">
-                                                        <p class="copyright">
-                                                                Copyright © 2013. All Rights Reserved by KnowledgeBase.</p>
-                                                </div>
-                                                <div class="span6">
-                                                        <!-- Social Navigation -->
-                                                        
-                                                </div>
-                                        </div>
-                                </div>
-                        </div>
-                        <!-- End of Footer Bottom -->
-
-                </footer>
-                <!-- End of Footer -->
-
-                <a href="#top" id="scroll-top"></a>
-
-                <!-- script -->
-                <script type='text/javascript' src='js/jquery-1.8.3.min.js'></script>
-                <script type='text/javascript' src='js/jquery.easing.1.3.js'></script>
-                <script type='text/javascript' src='js/prettyphoto/jquery.prettyPhoto.js'></script>
-                <script type='text/javascript' src='js/jflickrfeed.js'></script>
-				<script type='text/javascript' src='js/jquery.liveSearch.js'></script>
-                <script type='text/javascript' src='js/jquery.form.js'></script>
-                <script type='text/javascript' src='js/jquery.validate.min.js'></script>
-                <script type='text/javascript' src='js/custom.js'></script>
-
-        </body>
+</body>
 </html>

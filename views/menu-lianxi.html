@@ -1,0 +1,151 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="lt-ie9 lt-ie8 lt-ie7" lang="en-US"> <![endif]-->
+<!--[if IE 7]>
+<html class="lt-ie9 lt-ie8" lang="en-US"> <![endif]-->
+<!--[if IE 8]>
+<html class="lt-ie9" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en-US"> <!--<![endif]-->
+<head>
+    <% include ../views/templates/head.html %>
+</head>
+<body>
+
+<!-- Start of Header -->
+<% include ../views/templates/header-wrapper.html %>
+<!-- End of Header -->
+
+<!-- Start of Search Wrapper -->
+<% include ../views/templates/search-area-wrapper.html %>
+<!-- End of Search Wrapper -->
+
+
+<!-- Start of Page Container -->
+<div class="page-container">
+    <div class="container">
+        <div class="row">
+            <div class="page-container">
+                <div class="container">
+                    <div class="row">
+
+                        <!-- start of page content -->
+                        <div class="span8 page-content">
+
+                            <article class="type-page hentry clearfix">
+                                <h1 class="post-title">
+                                    <a href="#">联系我们</a>
+                                </h1>
+                                <hr>
+                                <p>如果您有任何意见和建议，请填写如下信息发送给我们，我们会及时回复您的！</p>
+                            </article>
+
+
+                            <form id="contact-form" class="row" action="http://inspirythemes.com/templates/knowledgebase-html/contact_form_handler.php" method="post">
+
+                                <div class="span2">
+                                    <label for="name">你的名字 <span>*</span> </label>
+                                </div>
+                                <div class="span6">
+                                    <input type="text" name="name" id="name" class="required input-xlarge" value="" title="* Please provide your name">
+                                </div>
+
+                                <div class="span2">
+                                    <label for="email">你的邮箱 <span>*</span></label>
+                                </div>
+                                <div class="span6">
+                                    <input type="text" name="email" id="email" class="email required input-xlarge" value="" title="* Please provide a valid email address">
+                                </div>
+
+                                <div class="span2">
+                                    <label for="reason">标题 </label>
+                                </div>
+                                <div class="span6">
+                                    <input type="text" name="reason" id="reason" class="input-xlarge" value="">
+                                </div>
+
+                                <div class="span2">
+                                    <label for="message">内容 <span>*</span> </label>
+                                </div>
+                                <div class="span6">
+                                    <textarea name="message" id="message" class="required span6" rows="6" title="* Please enter your message"></textarea>
+                                </div>
+
+                                <div class="span6 offset2 bm30">
+                                    <input type="submit" name="submit" value="发送消息" class="btn btn-inverse">
+                                    <img src="images/loading.gif" id="contact-loader" alt="Loading...">
+                                </div>
+
+                                <div class="span6 offset2 error-container"></div>
+                                <div class="span8 offset2" id="message-sent"></div>
+
+                            </form>
+                        </div>
+                        <!-- end of page content -->
+
+
+                        <!-- start of sidebar -->
+                        <aside class="span4 page-sidebar">
+
+                            <section class="widget">
+                                <div class="support-widget">
+                                    <h3 class="title">帮助中心</h3>
+                                    <p class="intro">您需要更多的帮助吗？请联系我们帮您解决更多的问题哦！</p>
+                                </div>
+                            </section>
+
+                            <section class="widget">
+                                <h3 class="title">最新的帖子</h3>
+                                <ul class="articles">
+                                    <li class="article-entry standard">
+                                        <h4><a href="single.html">【宝宝怎样才能长高】宝宝长高7大秘籍，一项都不能漏~</a></h4>
+                                        <span class="article-meta">2016,07,08 <a href="#" title="View all posts in Server &amp; Database">育儿知识</a></span>
+                                        <span class="like-count">66</span>
+                                    </li>
+                                    <li class="article-entry standard">
+                                        <h4><a href="single.html">【月子病】新妈妈要小心预防6种月子病，月子病的治疗方法</a></h4>
+                                        <span class="article-meta">2016,07,07 <a href="#" title="View all posts in Advanced Techniques">辣妈帮</a></span>
+                                        <span class="like-count">18</span>
+                                    </li>
+                                    <li class="article-entry image">
+                                        <h4><a href="single.html">【婴儿果汁】几种常见的果汁制作方法及果汁喂养注意事项~</a></h4>
+                                        <span class="article-meta">2016,07,06 <a href="#" title="View all posts in Designing in WordPress">育儿知识</a></span>
+                                        <span class="like-count">7</span>
+                                    </li>
+                                    <li class="article-entry video">
+                                        <h4><a href="single.html">【宝宝爱米粉】米粉喂养全攻略，献给将要或者正在给宝宝喂米粉的麻麻们~</a></h4>
+                                        <span class="article-meta">2016,07,05 <a href="#" title="View all posts in WordPress Plugins">育儿知识</a></span>
+                                        <span class="like-count">7</span>
+                                    </li>
+                                    <li class="article-entry standard">
+                                        <h4><a href="single.html">【如厕训练】什么时候要开始训练宝宝大小便，如何训练宝宝摆脱尿布，独立大小便？</a></h4>
+                                        <span class="article-meta">2016,07,04 <a href="#" title="View all posts in Website Dev">育儿知识</a></span>
+                                        <span class="like-count">15</span>
+                                    </li>
+                                    <li class="article-entry standard">
+                                        <h4><a href="single.html">【满月发汗】月子里如何发汗？</a></h4>
+                                        <span class="article-meta">2016,07,03 <a href="#" title="View all posts in Theme Development">辣妈帮</a></span>
+                                        <span class="like-count">1</span>
+                                    </li>
+                                </ul>
+                            </section>
+
+
+                        </aside>
+                        <!-- end of sidebar -->
+                    </div>
+                </div>
+            </div>
+
+            <% include ../views/templates/sidebar.html %>
+        </div>
+    </div>
+</div>
+<!-- End of Page Container -->
+
+<% include ../views/templates/footer.html %>
+
+<% include ../views/templates/scripts.html %>
+
+</body>
+</html>
